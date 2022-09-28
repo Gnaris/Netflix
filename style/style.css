@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    ;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.d-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../asset/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 1200px;
+    background-position: top-left;
+    min-height: 100vh;
+    max-width: 100vw;
+    direction: ltr;
+}
+
+.logo-container {
+    line-height: 120px;
+}
+
+.logo {
+    fill: red;
+    margin-left: 3%;
+    width: 167px;
+    line-height: 90px;
+}
+
+/* FORM CONTAINER */
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+}
+
+.form-title {
+    color: white;
+}
+
+/* FORM INPUT CONTAINER */
+
+.form-input-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
+.input-container {
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-container-content{
+    position: relative;
+    width: 100%;
+}
+
+.input-box {
+    background: #333;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 16px 20px 0;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.label-box {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    color: #8c8c8c;
+    transition: .1s;
+}
+
+.label-focused{
+    top: 15%;
+    font-size: 12px;
+}
+
+.input-box-focused{
+    border-bottom: 3px solid #e87c03;
+}
+
+.input-error{
+    display: none;
+    color: #e87c03;
+    font-size: 13px;
+    padding: 6px 3px;
+}
+
+.show-error{
+    display: block;
+}
+
+/* FORM FOOTER CONTAINER */
+
+.form-footer-container{
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.btn-submit{
+    width: 100%;
+    background: #e50914;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+}
+
+.form-option-container{
+    justify-content: space-between;
+    width: 100%;
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+.form-option-container a{
+    color: #b3b3b3;
+}
+
+.option-content{
+    gap: 5px;
+}
+
+.form-option-checkbox
+{
+    background-color: black;
+}
+
+.need-help:hover{
+    text-decoration: underline;
+}
+
+/* FORM FOOTER CONTENT */
+
+.form-footer-content{
+    flex-direction: column;
+    align-items: flex-start;
+    color: #737373;
+    gap: 20px;
+}
+.first-time-connexion{
+    font-size: 16px;
+}
+.first-time-connexion a{
+    color: white;
+}
+.first-time-connexion a:hover{
+    text-decoration: underline;
+}
+
+.form-footer-security-content{
+    font-size: 13px;
+}
+
+.more-information{
+    color: #0071eb;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.more-information:hover{
+    text-decoration: underline;
+}
+.more-information-hide{
+    opacity: 0;
+}
+
+.form-footer-security-information{
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.form-footer-security-information a{
+    color: #0080FF;
+}
+.show-security-information{
+    opacity: 1;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 100px;
+    background: rgba(0,0,0,.75);
+    padding: 30px;
+    min-height: 250px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15%;
+    flex-direction: column;
+    gap: 30px;
+    color: #737373;
+}
+
+.footer-content{
+    gap: 75px;
+}
+
+.footer-box{
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    gap: 15px;
+}
+.footer-box a{
+    color: #737373;
+    font-size: 13px;
+}
+.footer-box a:hover{
+    text-decoration: underline;
+}
+
+.call-number{
+    color: #737373;
+}
+.call-number:hover{
+    text-decoration: underline;
+}
