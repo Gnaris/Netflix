@@ -19,6 +19,10 @@
             <div class="d-center">
                 <form class="form-container" action="connexion/request" method="post">
                     <h1 class="form-title">S'identifier</h1>
+                    <div class="connexion-error-container">
+                        <p>Nous n'avons pas trouvé de compte avec cette adresse e-mail. Veuillez réessayer ou</p>
+                        <a href="">créez un nouveau compte.</a>
+                    </div>
                     <div class="form-input-container d-center">
                         <div class="input-container">
                             <div class="input-container-content">
@@ -26,8 +30,7 @@
                                 <label for="login" form="login" class="label-box" data-type="login">E-mail ou numéro de
                                     téléphone</label>
                             </div>
-                            <p class="input-error" data-type="login">Veuillez entrer une adresse e-mail ou un numéro de téléphone valide.
-                            </p>
+                            <p class="input-error" data-type="login">Veuillez entrer une adresse e-mail ou un numéro de téléphone valide.</p>
                         </div>
                         <div class="input-container">
                             <div class="input-container-content">

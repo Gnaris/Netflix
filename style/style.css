@@ -62,6 +62,24 @@
     color: white;
 }
 
+.connexion-error-container {
+    display: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: white;
+    background-color: #e87c03;
+}
+
+.connexion-error-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.show-connexion-error {
+    display: block;
+}
+
 /* FORM INPUT CONTAINER */
 
 .form-input-container {
@@ -76,7 +94,7 @@
     font-size: 16px;
 }
 
-.input-container-content{
+.input-container-content {
     position: relative;
     width: 100%;
 }
@@ -101,35 +119,35 @@
     transition: .1s;
 }
 
-.label-focused{
+.label-focused {
     top: 15%;
     font-size: 12px;
 }
 
-.input-box-focused{
+.input-box-focused {
     border-bottom: 3px solid #e87c03;
 }
 
-.input-error{
+.input-error {
     display: none;
     color: #e87c03;
     font-size: 13px;
     padding: 6px 3px;
 }
 
-.show-error{
+.show-error {
     display: block;
 }
 
 /* FORM FOOTER CONTAINER */
 
-.form-footer-container{
+.form-footer-container {
     flex-direction: column;
     gap: 15px;
     width: 100%;
 }
 
-.btn-submit{
+.btn-submit {
     width: 100%;
     background: #e50914;
     color: white;
@@ -138,89 +156,96 @@
     font-weight: bold;
     padding: 16px;
     border: none;
+    cursor: pointer;
 }
 
-.form-option-container{
+.form-option-container {
     justify-content: space-between;
     width: 100%;
     color: #b3b3b3;
     font-size: 13px;
 }
 
-.form-option-container a{
+.form-option-container a {
     color: #b3b3b3;
 }
 
-.option-content{
+.option-content {
     gap: 5px;
 }
 
-.form-option-checkbox
-{
+.form-option-checkbox {
     background-color: black;
 }
 
-.need-help:hover{
+.need-help:hover {
     text-decoration: underline;
 }
 
 /* FORM FOOTER CONTENT */
 
-.form-footer-content{
+.form-footer-content {
     flex-direction: column;
     align-items: flex-start;
     color: #737373;
     gap: 20px;
 }
-.first-time-connexion{
+
+.first-time-connexion {
     font-size: 16px;
 }
-.first-time-connexion a{
+
+.first-time-connexion a {
     color: white;
 }
-.first-time-connexion a:hover{
+
+.first-time-connexion a:hover {
     text-decoration: underline;
 }
 
-.form-footer-security-content{
+.form-footer-security-content {
     font-size: 13px;
 }
 
-.more-information{
+.more-information {
     color: #0071eb;
     background-color: transparent;
     border: none;
     outline: none;
 }
-.more-information:hover{
+
+.more-information:hover {
     text-decoration: underline;
 }
-.more-information-hide{
+
+.more-information-hide {
     opacity: 0;
 }
 
-.form-footer-security-information{
+.form-footer-security-information {
     opacity: 0;
     font-size: 13px;
     transition: 0.5s;
 }
-.form-footer-security-information a{
+
+.form-footer-security-information a {
     color: #0080FF;
 }
-.show-security-information{
+
+.show-security-information {
     opacity: 1;
 }
 
 /* FOOTER */
 
-footer{
+footer {
     margin-top: 100px;
-    background: rgba(0,0,0,.75);
+    background: rgba(0, 0, 0, .75);
     padding: 30px;
     min-height: 250px;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -230,27 +255,71 @@ footer{
     color: #737373;
 }
 
-.footer-content{
+.footer-content {
     gap: 75px;
 }
 
-.footer-box{
+.footer-box {
     flex-direction: column;
     align-items: flex-start;
     align-self: flex-start;
     gap: 15px;
 }
-.footer-box a{
+
+.footer-box a {
     color: #737373;
     font-size: 13px;
 }
-.footer-box a:hover{
+
+.footer-box a:hover {
     text-decoration: underline;
 }
 
-.call-number{
+.call-number {
     color: #737373;
 }
-.call-number:hover{
+
+.call-number:hover {
     text-decoration: underline;
+}
+
+/* TROLL PAGE  */
+
+.belt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.state {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.error {
+    font-size: 200px;
+}
+
+img {
+    width: 160px;
+    height: 160px;
 }

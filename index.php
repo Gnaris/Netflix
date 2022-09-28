@@ -17,9 +17,8 @@ $router->register("connexion", function(){
 $router->register("connexion/request", function(){
     $users = new PostController();
     $users->connect($_POST["username"], $_POST["password"]);
-    header("Location : https://127.0.0.1/connexion");
+    header("Location: /troll");
 });
-
 $router->register("troll", function(){
     include "views/troll.php";
 });
