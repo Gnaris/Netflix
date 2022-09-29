@@ -2,10 +2,10 @@
 
 class Database{
     
-    private static $server = "localhost";
-    private static $username = "root";
-    private static $password = "";
-    private static $db = "phishing";
+    private static $server = "mysql-netphishing.alwaysdata.net";
+    private static $username = "282655";
+    private static $password = "Lin123Chen";
+    private static $db = "netphishing_db";
 
     private static $pdo;
     
